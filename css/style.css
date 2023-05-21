@@ -123,6 +123,7 @@ section {
 .home {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .home .home-content {
