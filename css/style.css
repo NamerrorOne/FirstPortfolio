@@ -123,7 +123,6 @@ section {
 .home {
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 .home .home-content {
@@ -274,7 +273,6 @@ section {
     width: 560px;height: 560px;
     border: 3px solid var(--main-color);
     border-radius: 50%;
-    position: absolute;
 }
 
 .home .profession-container .overlay {
@@ -810,7 +808,7 @@ span {
     }
 
     .home .profession-container .overlay {
-        position: fixed;
+        position: absolute;
         left: 50%;
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
@@ -825,7 +823,7 @@ span {
     }
 
     .home .profession-container .profession-box {
-        position: fixed;
+        position: absolute;
         top: 50%;
         left: 0;
         width: 100%;
@@ -864,7 +862,7 @@ span {
     
 
     .home .profession-box .circle {
-        position: fixed;
+        position: absolute;
         width: 670px;
         height: 670px;
         z-index: -1;
