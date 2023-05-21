@@ -683,6 +683,7 @@ span {
 }
 
 @media (max-width: 991px) {
+
     .about .about-img img{
         height: 300px;
         width: 300px;
@@ -783,7 +784,7 @@ span {
     }
 
     .home-content {
-       margin-bottom: 450px;
+       margin-bottom: 200px;
     }
 
     .home-content h3 {
@@ -820,6 +821,7 @@ span {
         width: 100%;
         left: 0;
         height: 100%;
+        margin-top: 50px;
     }
 
     .home .profession-container .profession-box {
