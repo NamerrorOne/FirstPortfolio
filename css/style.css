@@ -362,6 +362,9 @@ span {
     transition: .3s ease;
 }
 
+
+
+
 .services .services-container .services-box:hover {
     box-shadow: 0 .1rem 2rem var(--shadow-color);
     transform: scale(1.05);
@@ -511,6 +514,8 @@ span {
     border-radius: 50%;
     border: .5rem solid var(--bg-color);
     outline: .5rem solid var(--main-color);
+    background-size: contain;
+    background-position: center;
 }
 
 .testimonial-slide h3 {

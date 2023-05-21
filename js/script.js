@@ -1,3 +1,21 @@
+// Services cards 
+const serviceCard = document.querySelector(".services-box");
+const serviceBtn = document.querySelector(".services-box .btn");
+
+serviceBtn.addEventListener("click", e => {
+  
+})
+
+// feedback alert 
+
+const submitBtn = document.querySelector(".contact .btn");
+submitBtn.onclick = (e) => {
+  if(e.target = serviceBtn) {
+    alert("Спасибо за отклик! Но лучше напишите мне вконтакте или в телеграме.");
+  }
+}
+
+
 //menu active navbar 
 const menuIcon = document.querySelector("#menu-icon");
 const navbar = document.querySelector(".navbar");
@@ -12,10 +30,6 @@ menuIcon.onclick = function() {
 //sections active
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".navbar a");
-
-
-
-
 
 window.onscroll = () => {
     //active links
@@ -43,7 +57,6 @@ window.onscroll = () => {
 
 // dark mode 
 const darkMode = document.querySelector("#darkMode-icon");
-console.log(darkMode)
     darkMode.onclick = () => {
         darkMode.classList.toggle("bx-sun");
         document.body.classList.toggle("dark-mode");
