@@ -115,7 +115,7 @@ header.sticky {
                                 /* home section */
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     padding: 10rem 7% 2rem;
     z-index: 1;
 }
