@@ -841,7 +841,7 @@ span {
     }
 
     .home .profession-box .profession:nth-child(1) {
-        transform: rotate(-90deg) translate(-140px,-180px);
+        transform: rotate(-90deg) translate(-130px,-200px);
     }
 
     .home .profession-box .profession:nth-child(1) i{
@@ -906,9 +906,20 @@ span {
 
 @media (max-width: 460px) {
 
-  .profession-container {
-    margin-top: 150px;
-  }
+    .home-content {
+        
+    }
+
+    .profession-container {
+      
+    }
+
+    .profession-box {
+      margin-top: 60px;
+    }
+
+  
+
 
     html {
         font-size: 50%;
@@ -919,7 +930,7 @@ span {
     }
 
     .home {
-        padding: 0 2% 2.5rem;
+        padding: 0 2% -1rem;
     }
 
     .contact form .input-box input {
