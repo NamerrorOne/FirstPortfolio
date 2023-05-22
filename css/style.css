@@ -905,9 +905,10 @@ span {
 }
 
 @media (max-width: 460px) {
-.home-content {
-    margin-bottom: 120px;
-}
+
+  .profession-container {
+    margin-top: 100px;
+  }
 
     html {
         font-size: 50%;
@@ -918,7 +919,7 @@ span {
     }
 
     .home {
-        padding: 0 3% 20rem;
+        padding: 0 2% 5rem;
     }
 
     .contact form .input-box input {
