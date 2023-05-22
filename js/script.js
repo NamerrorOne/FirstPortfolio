@@ -31,7 +31,7 @@ closeBtns.forEach((el,i) => {
 
 const submitBtn = document.querySelector(".contact .btn");
 submitBtn.onclick = (e) => {
-  if(e.target = serviceBtn) {
+  if(e.target = submitBtn) {
     alert("Спасибо за отклик! Но лучше напишите мне вконтакте или в телеграме.");
   }
 }
