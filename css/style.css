@@ -28,11 +28,23 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
 }
 
                             /* header develop */
