@@ -387,7 +387,7 @@ span {
    flex-direction: column;
    z-index: 10000;
    row-gap: 30px;
-   box-shadow: rgba(0, 0, 0, .8);
+   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
    border: 1px solid var(--main-color);
 }
 
