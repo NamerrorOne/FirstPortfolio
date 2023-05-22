@@ -1,10 +1,31 @@
 // Services cards 
-const serviceCard = document.querySelector(".services-box");
-const serviceBtn = document.querySelector(".services-box .btn");
+const body = document.querySelector("body")
+function blured() {
+  body.classList.add("modal")
+}
 
-serviceBtn.addEventListener("click", e => {
-  
+function unBlured() {
+  body.classList.remove("modal")
+}
+
+const serviceCards = document.querySelectorAll(".services-box.reversed");
+const serviceBtns = document.querySelectorAll(".read .btn");
+const closeBtns = document.querySelectorAll(".pop-up__card .btn");
+
+serviceBtns.forEach((el,i) => {
+  el.addEventListener("click", e => { 
+    serviceCards[i].classList.toggle("reversed");
+    blured()
 })
+})
+
+closeBtns.forEach((el,i) => {
+  el.addEventListener("click", e => {
+    serviceCards[i].classList.toggle("reversed");
+    unBlured()
+})
+})
+
 
 // feedback alert 
 

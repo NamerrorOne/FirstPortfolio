@@ -34,10 +34,9 @@ html {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none; 
 }
+
+
 
 input[type='number'],
 input[type="number"]:hover,
@@ -45,7 +44,12 @@ input[type="number"]:focus {
     appearance: none;
     -moz-appearance: textfield;
 }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none; 
 }
+
 
                             /* header develop */
 
@@ -376,6 +380,86 @@ span {
 
 
 
+.services .services-container .pop-up__card {
+   position: absolute;
+   width: 100%;
+   display: inline-flex;
+   flex-direction: column;
+   z-index: 10000;
+   row-gap: 30px;
+   box-shadow: rgba(0, 0, 0, .8);
+   border: 1px solid var(--main-color);
+}
+
+.pop-up__card .btn {
+   align-self: flex-end;
+   justify-self: flex-start;
+}
+
+.services .services-container .reversed {
+    display: none;
+}
+
+.services-box .tool {
+   
+}
+
+.services-box .tool .text {
+   font-size: 16px;
+}
+
+.services .services-container .services-box .tool .bar {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+}
+
+.services-container .services-box .tool .bar .bar-inner {
+    height: 100%;
+    width: 75%;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.services-container .services-box .tool .bar .bar-inner__html  {
+    width: 80%;
+}
+.services-container .services-box .tool .bar .bar-inner__sass  {
+    width: 50%;
+}
+.services-container .services-box .tool .bar .bar-inner__js  {
+    width: 70%;
+}
+.services-container .services-box .tool .bar .bar-inner__react  {
+    width: 30%;
+}
+.services-container .services-box .tool .bar .bar-inner__cpp  {
+    width: 40%;
+}
+.services-container .services-box .tool .bar .bar-inner__ts  {
+    width: 40%;
+}
+.services-container .services-box .tool .bar .bar-inner__node  {
+    width: 50%;
+}
+.services-container .services-box .tool .bar .bar-inner__vue  {
+    width: 30%;
+}
+.services-container .services-box .tool .bar .bar-inner__git  {
+    width: 35%;
+}
+.services-container .services-box .tool .bar .bar-inner__sql {
+    width: 35%;
+}
+.services-container .services-box .tool .bar .bar-inner__figma  {
+    width: 45%;
+}
+.services-container .services-box .tool .bar .bar-inner__line  {
+    width: 25%;
+}
 
 .services .services-container .services-box:hover {
     box-shadow: 0 .1rem 2rem var(--shadow-color);
@@ -636,6 +720,8 @@ span {
 }
 
                          /* BREAKPOINTS */
+
+
 
 @media (max-width: 1260px) {
     .home .home-content {
@@ -964,3 +1050,21 @@ span {
 @media (max-width: 400px) {
 
 } 
+
+@media (max-width: 615px) {
+    .pop-up__card {
+       max-height: 100vh;
+    }
+
+    .pop-up__card-1 {
+        top: -100px;
+    }
+    
+    .pop-up__card-2 {
+       
+    }
+    
+    .pop-up__card-3 {
+        top: 370px;
+    }
+}
